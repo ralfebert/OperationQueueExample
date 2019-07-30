@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C2FDDA079CF813C6C31A30 /* Pi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49035D777409103D01631009 /* Pi.swift */; };
 		AA93ACA3F2BF29ED65AC4F13 /* OperationQueueExampleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1151C1D6B3AFE8EE63EC86 /* OperationQueueExampleAppDelegate.swift */; };
 		C7A950BC58144A399823045D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B09F32393778FE37E54BA83 /* Assets.xcassets */; };
+		CDAB2ECD6B69092DE1A18C22 /* BackgroundOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843E44210098D02628E4DF6 /* BackgroundOperationViewController.swift */; };
 		D0F45C8D8C106349BA653268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47013E450A62E1A045B3A46 /* LaunchScreen.storyboard */; };
 		F9645FC95DB84C76D28C567C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70C3955CF630978ABF23 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,6 +19,8 @@
 		0AB3B1ABFCE1F70F660A60EA /* OperationQueueExample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OperationQueueExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1151C1D6B3AFE8EE63EC86 /* OperationQueueExampleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueueExampleAppDelegate.swift; sourceTree = "<group>"; };
 		40EE70C3955CF630978ABF23 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		49035D777409103D01631009 /* Pi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pi.swift; sourceTree = "<group>"; };
+		5843E44210098D02628E4DF6 /* BackgroundOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOperationViewController.swift; sourceTree = "<group>"; };
 		6B09F32393778FE37E54BA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7162A659719ECC78B605B312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC5CA2087177CF7D0DA071CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		046D00E6A176B7E465451110 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				49035D777409103D01631009 /* Pi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 		DFD5B4F824F93B84AD17CCA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5843E44210098D02628E4DF6 /* BackgroundOperationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 72AA03F68FB2AB7A238FA8FF;
@@ -153,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA93ACA3F2BF29ED65AC4F13 /* OperationQueueExampleAppDelegate.swift in Sources */,
+				52C2FDDA079CF813C6C31A30 /* Pi.swift in Sources */,
+				CDAB2ECD6B69092DE1A18C22 /* BackgroundOperationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +185,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OperationQueueExample/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.OperationQueueExample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -302,7 +314,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OperationQueueExample/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.OperationQueueExample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;

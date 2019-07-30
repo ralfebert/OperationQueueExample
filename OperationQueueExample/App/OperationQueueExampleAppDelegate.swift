@@ -1,4 +1,5 @@
-// © 2019 Ralf Ebert — OperationQueueExample
+// © 2019 Ralf Ebert — iOS Example Project: OperationQueueExample
+// License: https://opensource.org/licenses/0BSD
 
 import UIKit
 

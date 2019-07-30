@@ -2,7 +2,7 @@ project:
 	xcodegen
 
 format:
-	swiftformat --header "© 2019 Ralf Ebert — OperationQueueExample" --swiftversion 5 --indentcase true --stripunusedargs unnamed-only --self insert --disable blankLinesAtStartOfScope,blankLinesAtEndOfScope .
+	swiftformat --header "© 2019 Ralf Ebert — iOS Example Project: OperationQueueExample\nLicense: https://opensource.org/licenses/0BSD" --swiftversion 5 --indentcase true --stripunusedargs unnamed-only --self insert --disable blankLinesAtStartOfScope,blankLinesAtEndOfScope .
 
 assets:
 	# export icon
