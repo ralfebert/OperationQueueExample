@@ -5,8 +5,6 @@ import UIKit
 
 class BackgroundOperationViewController: UIViewController {
 
-    let backgroundQueue = OperationQueue()
-
     @IBOutlet var resultsLabel: UILabel!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
 
@@ -15,7 +13,7 @@ class BackgroundOperationViewController: UIViewController {
         self.activityIndicator.isHidden = false
         self.calculateInBackground { result in
 
-            OperationQueue.main.addOperation {
+            DispatchQueue.main.async {
                 self.resultsLabel.text = String(result)
                 self.activityIndicator.isHidden = true
             }
@@ -24,7 +22,7 @@ class BackgroundOperationViewController: UIViewController {
     }
 
     func calculateInBackground(completion: @escaping (_ result: Double) -> Void) {
-        self.backgroundQueue.addOperation {
+        DispatchQueue.global(qos: .userInitiated).async {
             completion(approximatePi())
         }
     }
